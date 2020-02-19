@@ -1,0 +1,14 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: quattro
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=experimental_app
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate.ddl-auto: update
+
+default:
+  role: user
